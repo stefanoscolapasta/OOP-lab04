@@ -23,7 +23,7 @@ public class RobotPosition implements Position2D {
     public boolean equals(final Object o) {
         if (o instanceof Position2D) {
             final var p = (Position2D) o;
-            return x == p.getX() && y == p.getY();
+            return this.x == p.getX() && this.y == p.getY();
         }
         return false;
     }
@@ -40,7 +40,7 @@ public class RobotPosition implements Position2D {
         /*
          * This could be implemented WAY better.
          */
-        return x ^ y;
+        return this.x ^ this.y;
     }
 
     public RobotPosition sumVector(final int x, final int y) {
@@ -48,10 +48,10 @@ public class RobotPosition implements Position2D {
     }
 
     public RobotPosition sumVector(final Position2D p) {
-        return new RobotPosition(x + p.getX(), y + p.getY());
+        return new RobotPosition(this.x + p.getX(), this.y + p.getY());
     }
 
     public String toString() {
-        return "[" + x + ", " + y + "]";
+        return "[" + this.x + ", " + this.y + "]";
     }
 }

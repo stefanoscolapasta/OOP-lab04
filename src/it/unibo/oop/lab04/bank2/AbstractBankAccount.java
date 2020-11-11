@@ -1,7 +1,6 @@
 package it.unibo.oop.lab04.bank2;
 
 import it.unibo.oop.lab04.bank.BankAccount;
-import it.unibo.oop.lab04.bank.StrictBankAccount;
 
 public abstract class AbstractBankAccount implements BankAccount {
 	private static final double MANAGEMENT_FEE = 5;

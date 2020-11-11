@@ -7,7 +7,7 @@ package it.unibo.oop.lab04.robot.base;
 public class BaseRobot implements Robot {
 
     public static final double BATTERY_FULL = 100;
-    public static final double MOVEMENT_DELTA_CONSUMPTION = 1.2;
+    public static final double MOVEMENT_DELTA_CONSUMPTION = 1.0;
     private static final int MOVEMENT_DELTA = 1;
 
     private double batteryLevel;
@@ -23,7 +23,7 @@ public class BaseRobot implements Robot {
     public BaseRobot(final String robotName) {
         this.environment = new RobotEnvironment(new RobotPosition(0, 0));
         this.robotName = robotName;
-        this.batteryLevel = BATTERY_FULL;
+        this.batteryLevel = BaseRobot.BATTERY_FULL;
     }
 
     /**

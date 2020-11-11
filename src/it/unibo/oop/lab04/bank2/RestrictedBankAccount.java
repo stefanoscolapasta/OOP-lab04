@@ -1,7 +1,5 @@
 package it.unibo.oop.lab04.bank2;
 
-import it.unibo.oop.lab04.bank.StrictBankAccount;
-
 public class RestrictedBankAccount extends AbstractBankAccount {
 	private static final int MANAGEMENT_FEE = 5;
 	

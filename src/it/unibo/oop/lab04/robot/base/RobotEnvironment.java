@@ -49,9 +49,9 @@ public class RobotEnvironment {
      *         only inside the environment's boundaries)
      */
     public boolean move(final int dx, final int dy) {
-        final var newPos = position.sumVector(dx, dy);
+        final var newPos = this.position.sumVector(dx, dy);
         if (isWithinWorld(newPos)) {
-            position = newPos;
+            this.position = newPos;
             return true;
         }
         return false;
@@ -61,7 +61,7 @@ public class RobotEnvironment {
      * @return Current X position
      */
     public Position2D getPosition() {
-        return position;
+        return this.position;
     }
 
 }
